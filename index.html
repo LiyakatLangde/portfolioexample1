@@ -137,93 +137,48 @@
  
 <div class="row">
 
-<!-- Tutorial - https://youtu.be/VufN46OyFng  -->
+ 
+ 
 
-<div class="containern">
-  <div class="content">
-    <div class="logo">
-      <img src="images/PracticeLeagueLogo.png" alt="" />
-    </div>
-   
-    <div class="text">
-      <h1>PracticeLeague</h1>
-      Start for free & get <br />
-      attractive offers today !
-    </div>
+ 
+</div>
+ <div class="row">
+  <div class="containern-full orange text-center">
+    <form class="form containern-nonfull"  name="vform" method="post">
+        <div class="head-form">Feedback Form</div>
+      <div id="nama-key">
+        <input type="text" name="nama" id="usernama" placeholder="Full Name" onkeypress="return alpha(event)" >
+        <div id="name_error" class="text_error"></div>
+      </div>
+      <div>
+        <input type="text" name="email" placeholder="E-mail">
+        <div id="email_error" class="text_error"></div>
+      </div>
+      <div>
+        <input name="mobileno"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+        type = "number"
+        maxlength = "10" id="mobileno" placeholder="Phone No" />
+        <div id="mobileno_error" class="text_error"></div>
+      </div>
+      <div>
+        <input type="text" name="cname" placeholder="Company Name" />
+        <div id="cname_error" class="text_error"></div>
+      </div>
+      <div>
+       
+        <button  class="btn btn-primary" type="button" onclick="return Validate()">Submit</button>
+      </div>
+    </form>
   </div>
-  <form id="form">
-    <div class="social">
-      <div class="title">Get Started</div>
-      <div class="question">
-        Already Have an Account? <br />
-        <span>Sign In</span>
-      </div>
+  
 
-      <div class="btn">
-        <div class="btn-1">
-          <img src="https://img.icons8.com/color/30/000000/google-logo.png" />
-          Sign Up
-        </div>
-        <div class="btn-2">
-          <img src="https://img.icons8.com/ios-filled/30/ffffff/facebook-new.png" />
-          Sign Up
-        </div>
-      </div>
-
-      <div class="or">Or</div>
-    </div>
-
-    <!-- /** 
-          * ! user name Input here
-         **/ -->
-
-    <div>
-      <label for="username">User Name</label>
-      <i class="fas fa-user"></i>
-      <input type="text" name="username" id="username" placeholder="Joy Shaheb" />
-      <i class="fas fa-exclamation-circle failure-icon"></i>
-      <i class="far fa-check-circle success-icon"></i>
-      <div class="error"></div>
-    </div>
-
-    <!-- /** 
-          * ! Email Input here
-         **/ -->
-
-    <div>
-      <label for="email">Email</label>
-      <i class="far fa-envelope"></i>
-      <input type="email" name="email" id="email" placeholder="abc@gmail.com" />
-      <i class="fas fa-exclamation-circle failure-icon"></i>
-      <i class="far fa-check-circle success-icon"></i>
-      <div class="error"></div>
-    </div>
-
-    <!-- /** 
-          * ! Password Input here
-         **/ -->
-
-    <div>
-      <label for="password">Password</label>
-      <i class="fas fa-lock"></i>
-      <input type="password" name="password" id="password" placeholder="Password here" />
-      <i class="fas fa-exclamation-circle failure-icon"></i>
-      <i class="far fa-check-circle success-icon"></i>
-      <div class="error"></div>
-    </div>
-
-    <button type="submit" id="submit">Submit</button>
-  </form>
-</div>
-
- 
-</div>
- 
+  
+ </div>
 
 
  
 
-     
+    <div class="row">
 
   <!--Section-->
 
@@ -358,7 +313,7 @@
         <!-- Copyright -->
   
       </footer>
- 
+    </div>
   <!--Footer-->
 
    
@@ -367,6 +322,7 @@
     <script src="js/jquery.min.js" type="text/javascript"></script>
     <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
     <script src="js/main.js" type="text/javascript"></script>
+   
      
   
   </body>
